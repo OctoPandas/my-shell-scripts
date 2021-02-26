@@ -25,4 +25,4 @@ ni() {
   done
 }
 # ni /path/dir/ /path/dir_b/file
-# will create directory (endswith '/') or files with intermediate directories
+# will create directory (endswith '/') or file with intermediate directories
