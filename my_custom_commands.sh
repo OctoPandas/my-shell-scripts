@@ -14,7 +14,7 @@ ni() {
 END_OF_FUNCTION
 # ni /path/file_a /path/file_b
 # from: https://unix.stackexchange.com/questions/168580/make-parent-directories-while-creating-a-new-file
-# Note: `for param do` is short form of `for param in "$@"; do`
+# NOTE: `for param do` is short form of `for param in "$@"; do`
 
 ni() {
   for param do
@@ -26,3 +26,10 @@ ni() {
 }
 # ni /path/dir/ /path/dir_b/file
 # will create directory (endswith '/') or file with intermediate directories
+
+last_command() {
+  echo "!!" | scb
+}
+# yarn add -D tailwindcss
+# last_command
+# NOTE: The quotes must be reserved, else `yarn add -D tailwindcss` can't be copied
